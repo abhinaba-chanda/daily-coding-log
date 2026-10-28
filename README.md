@@ -1,22 +1,20 @@
-# Daily Coding Log
+# unit-converter
 
-A daily learning log: one short note per study session on what I practiced that day.
+[![CI](https://github.com/abhinaba-chanda/unit-converter/actions/workflows/ci.yml/badge.svg)](https://github.com/abhinaba-chanda/unit-converter/actions/workflows/ci.yml)
 
-Topics covered: JavaScript, Python, C, C++, Node.js, Git, HTML/CSS and basic data structures and algorithms.
+Convert length, weight and temperature from the command line.
 
-## Layout
-
-```
-logs/
-  2025/11.md
-  2026/01.md
-  ...
+```bash
+python converter.py 5 km mi      # 5 km = 3.1069 mi
+python converter.py 70 kg lb
+python converter.py 37 c f
 ```
 
-Each month has its own file. Every line is one session: the date, the language, the concept and a tiny snippet to remember it by.
+Units: mm, cm, m, km, in, ft, mi | g, kg, lb, oz | c, f, k
 
-## Why
+## Tests
 
-Writing one line a day keeps me consistent and gives me a quick place to revise concepts before interviews and projects.
-
-Author: Abhinaba Chanda
+```bash
+pip install pytest
+pytest
+```
